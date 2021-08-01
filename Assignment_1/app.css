@@ -1,0 +1,42 @@
+h1 {
+  color: blueviolet;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: white;
+  font-family: sans-serif;
+}
+
+.save {
+  padding: 8px 20px;
+  border-radius: 8px;
+  border-color: transparent;
+  display: block;
+}
+.save:hover {
+  cursor: pointer;
+  background-color: #73e831;
+}
+
+.words {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.words::placeholder {
+  text-align: left;
+  font-size: medium;
+}
+
+.diary-entry-view::marker {
+  color: transparent;
+}
+
+.last {
+  justify-content: center;
+}

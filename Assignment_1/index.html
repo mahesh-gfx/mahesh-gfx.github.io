@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dear Diary...</h1> 
+        <form class='diary-entry'>
+            <textarea name="words" class="words" id="words" placeholder="Tell me about your day..." cols="80" rows="20"></textarea>
+            <button type="submit" class="save" id="save">Save</button> 
+        </form>
+        <div class='last'>Last updated in this session: <div id='lastup'></div> </div>
+        <div class="view">
+            <ul class="open-diary" id="list"></ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
