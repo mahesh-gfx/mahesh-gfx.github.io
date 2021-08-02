@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  width: auto;
+  width: 40%;
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -29,17 +29,17 @@ body {
 
 .finput,
 .form-control {
-  padding: 10px;
+  padding: 13px;
   width: 100%;
-  margin: 10px 0px 10px 0px;
-  border-radius: 5px;
-  border: 1px solid black;
+  margin: 10px 0px 20px 0px;
+  border: 2px solid rgb(214, 214, 214);
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .finput:hover,
 .form-control:hover {
-  border: 1px solid #60a9ff;
+  border: 2px solid #60a9ff;
 }
 
 h1 {
@@ -91,7 +91,6 @@ h4 {
   color: rgb(168, 1, 1);
 }
 .buttons {
-  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -119,5 +118,25 @@ h4 {
 }
 
 .suggestion {
-  margin: 15px;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label,
+.label {
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+}
+
+.exp label {
+  font-weight: 400;
+}
+textarea {
+  margin-top: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+textarea:hover {
+  border: 1px solid #60a9ff;
 }
