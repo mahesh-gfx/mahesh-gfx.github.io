@@ -15,24 +15,28 @@ diaryEntry.addEventListener('submit', function(event){
 //function to add entry to diary
 function addToDiary(item)
 {
-    if(item!='')
+    if(words.value.length!=0)
     {
-        const entry={
-            id: Date.now(),
-            content: item,
-            completed: true
-        };
+              if(item!='')
+                {
+                    const entry={
+                        id: Date.now(),
+                        content: item,
+                        completed: true
+                    };
 
-        diary.push(entry); //Adding entry to the diary array
-        saveToLocalStorage(diary);
+                    diary.push(entry); //Adding entry to the diary array
+                    saveToLocalStorage(diary);
 
-        words.value='';
-    }
+                    words.value='';
+                }
+                
+                var today = new Date();
+                var time=today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                sessionStorage.setItem("lastLog",time);
+                document.getElementById('lastup').innerHTML = ": " + sessionStorage.getItem("lastLog");
+     }
     
-    var today = new Date();
-    var time=today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    sessionStorage.setItem("lastLog",time);
-    document.getElementById('lastup').innerHTML = JSON.parse(sessionStorage.getItem("lastlog"));
 }
 
 //function to display diary entries
@@ -40,11 +44,14 @@ function displayEntries(diary)
 {
     openDiary.innerHTML = '';
     diary.forEach(function(item){
-        const li = document.createElement('li');
+        const li = document.createElement('div');
         li.setAttribute('class','diary-entry-view');
         li.setAttribute('data-key', item.id);
-
-        li.innerHTML= item.content + '<button class="delete-button">Delete Entry</button>';
+        var dt=document.createElement("div");
+        dt.setAttribute("class", "session");
+        dt.innerHTML=item.id;
+        li.appendChild(dt);
+        li.innerHTML=item.content + '<button class="delete-button">Delete Entry</button>';
         openDiary.append(li);
     });
 }
@@ -71,7 +78,7 @@ function fetchFromLocalStorage()
 //function to delete an entry
 function deleteEntry(id)
 {
-    diary.filter(function(item)
+    diary=diary.filter(function(item)
     {
         return item.id != id;
     });
@@ -82,12 +89,14 @@ function deleteEntry(id)
 fetchFromLocalStorage(); //Initially get evrything from Local Storage
 
 openDiary.addEventListener('click', function(event){
-    if(event.target.classlist.contains("delete-button")) 
+    if(event.target.classList.contains('delete-button')) 
     {
         deleteEntry(event.target.parentElement.getAttribute('data-key'));
     }
 
 });
 
-
-
+//function for erasing text area
+function eraseText() {
+    document.getElementById("words").value = "";
+}

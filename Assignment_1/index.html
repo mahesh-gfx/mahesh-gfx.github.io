@@ -14,11 +14,18 @@
         <h1>Dear Diary...</h1> 
         <form class='diary-entry'>
             <textarea name="words" class="words" id="words" placeholder="Tell me about your day..." cols="80" rows="20"></textarea>
-            <button type="submit" class="save" id="save">Save</button> 
+            <div class="buttons">
+                <button type="submit" class="save" id="save">Save</button> 
+                <input type="button" value="Reset" class="reset" onclick="javascript:eraseText();"></button>
+                <div class='last'>Last updated in this session<div id='lastup'></div> </div>
+            </div>
         </form>
-        <div class='last'>Last updated in this session: <div id='lastup'></div> </div>
+        
         <div class="view">
-            <ul class="open-diary" id="list"></ul>
+            <div class="saved">
+                Your Entries
+            </div>
+            <div class="open-diary" id="list"></div>
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
