@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Register Today</h1>
+      <h2>Fill in the data below.</h2>
+      <input type="text" class="in" id="name" placeholder="Full Name" /><br />
+      <input
+        type="email"
+        class="in"
+        id="mail"
+        placeholder="E-mail Address"
+      /><br />
+      <select name="position" id="pos" class="in">
+        <option value="" disabled selected>Position</option>
+        <option value="Trainee">Trainee</option>
+        <option value="Junior">Junior Software Technologist</option>
+        <option value="Senior">Senior Software Technologist</option>
+        <option value="Lead">Lead Software technologist</option>
+        <option value="Archi">Technical Architect</option></select
+      ><br />
+      <input type="password" placeholder="Password" class="in" id="pass" />
+      <div class="form-check">
+        <p>Gender:</p>
+        <label for="radio" class="form-check-label">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="gender"
+            id="gender"
+            value="M"
+          />
+          Male
+        </label>
+        <label for="radio" class="form-check-label">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="gender"
+            id="gender"
+            value="F"
+          />
+          Female
+        </label>
+        <label for="radio" class="form-check-label">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="gender"
+            id="gender"
+            value="S"
+          />
+          Secret
+        </label>
+      </div>
+
+      <input type="checkbox" name="confirm" id="confirm" class="confirm" />
+      <label for="confirm" class="confirm">I confirm that all data are correct</label>
+      <input type="button" class="register" id="regButton" value="Register" />
+    </div>
+  </body>
+</html>
