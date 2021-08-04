@@ -21,6 +21,7 @@ body {
   border: 3px solid white;
   padding: 33px;
   flex-direction: column;
+  min-width: 380px;
 }
 
 h1 {
@@ -118,8 +119,9 @@ div select option {
   display: none;
 }
 
-.form-check input[type="radio"]:checked {
+.form-check input[name="gender"]:checked {
   background-color: white;
+  color: #192732;
 }
 
 p {

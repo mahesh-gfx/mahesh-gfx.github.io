@@ -36,32 +36,29 @@
       <input type="password" placeholder="Password" class="in" id="pass" />
       <div class="form-check">
         <p>Gender:</p>
-        <label for="radio" class="form-check-label">
+        <label for="male" class="form-check-label">
           <input
             type="radio"
             class="form-check-input"
             name="gender"
-            id="gender"
+            id="male"
             value="M"
           />
-          Male
-        </label>
-        <label for="radio" class="form-check-label">
+          Male </label
+        ><input
+          type="radio"
+          class="form-check-input"
+          name="gender"
+          id="female"
+          value="F"
+        />
+        <label for="female" class="form-check-label"> Female </label>
+        <label for="secret" class="form-check-label">
           <input
             type="radio"
             class="form-check-input"
             name="gender"
-            id="gender"
-            value="F"
-          />
-          Female
-        </label>
-        <label for="radio" class="form-check-label">
-          <input
-            type="radio"
-            class="form-check-input"
-            name="gender"
-            id="gender"
+            id="secret"
             value="S"
           />
           Secret
@@ -69,7 +66,9 @@
       </div>
 
       <input type="checkbox" name="confirm" id="confirm" class="confirm" />
-      <label for="confirm" class="confirm">I confirm that all data are correct</label>
+      <label for="confirm" class="confirm"
+        >I confirm that all data are correct</label
+      >
       <input type="button" class="register" id="regButton" value="Register" />
     </div>
   </body>
