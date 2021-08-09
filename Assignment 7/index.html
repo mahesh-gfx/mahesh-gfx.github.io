@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cohort-4 Assignment 7 by Mahesh Adhikari">
+    <meta name="keywords" content="cohort4, vidhya school, HTML, CSS">
+    <meta name="author" content="Mahesh Adhikari">
+    <meta name="application-name" content="meta-tag example">
+    <title>Assignment 7</title>
+    <style>
+        .canvas {
+            border: 1px solid black;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>The meta tags are in the head.</h3>
+    <img src="../1601742596758.jpg" id="image" hidden width="500" height="500">
+    <div class="box">
+        <canvas id="canvas1" class="canvas" width="500" height="500"></canvas>
+        <canvas id="canvas2" class="canvas" width="500" height="500"></canvas>
+        <canvas id="canvas3" class="canvas" width="500" height="500"></canvas>
+
+    </div>
+
+    <div class="box">
+        <p><b>SVG</b></p><br>
+        <svg width="100" height="100">
+            <rect width="100" height="100" style="fill:rgb(0, 255, 128);stroke-width:10" />
+        </svg><br>
+
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="50" stroke-width="4" fill="blue" />
+        </svg> <br>
+
+        <svg width="150" height="110">
+            <polygon points="60 13, 110 48, 92 110, 30 110, 13 48"
+                style="fill:lime;stroke-width:5;fill-rule:evenodd;" />
+        </svg> <br>
+    </div>
+
+
+    <script>
+        // Gradient
+        var c = document.getElementById("canvas1");
+        var ctx = c.getContext("2d");
+        var grd = ctx.createRadialGradient(250, 250, 5, 0, 500, 400);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, 490, 490);
+
+        // Image
+        window.onload = function () {
+            var d = document.getElementById("canvas2");
+            var dtx = d.getContext("2d");
+            var image = document.getElementById("image");
+            dtx.drawImage(image, 0, 0, 500, 500);
+        }
+
+        //Text
+        var e = document.getElementById("canvas3");
+        var etx = e.getContext("2d");
+        etx.font = "30px Times New Roman"
+        etx.fillText("Hello Mahesh!", 162, 250);
+
+    </script>
+</body>
+
+</html>
