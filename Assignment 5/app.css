@@ -10,6 +10,9 @@ body {
   justify-content: center;
 }
 
+.just-right {
+  justify-content: right;
+}
 .flex {
   display: flex;
 }
@@ -82,4 +85,16 @@ p {
 
 span {
   font-weight: bold;
+}
+
+#block {
+  justify-content: space-around;
+}
+
+#in-block > * {
+  margin: 30px 0;
+}
+
+#inline > * {
+  margin: 30px 20px;
 }

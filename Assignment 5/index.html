@@ -339,7 +339,7 @@
   <p><b>Types of list</b></p>
   <div class="div-100 flex row" id="list">
 
-    <div class="div-20 flex col" id="unordered">
+    <div class="div-20 flex col padding-left-220" id="unordered">
       <span>Unordered List</span>
       <ul>
         <li>Milk</li>
@@ -373,7 +373,58 @@
       </dl>
     </div>
   </div>
-  <div class="div-100 flex row">
+  <div class="div-100 flex col" id="block">
     <p><b>Block vs Inline elements</b> </p>
+    <p>Block Elements</p>
+    <div class="div-100" id="in-block">
+      <address><b>address Tag</b> 13, Lorem Street, Ipsum City, 737107</address>
+      <article><b>article Tag</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim atque aspernatur quo
+        dolorum commodi. Esse
+        eius, tempore labore sapiente nisi corrupti id consequuntur dolor explicabo officiis alias recusandae soluta
+        quaerat!</article>
+      <aside><b>aside tag</b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae animi a nemo nobis
+        aspernatur assumenda dolore nulla quam. Provident, saepe rem. Doloribus corrupti autem eveniet qui
+        necessitatibus
+        unde quasi ea!</aside>
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        <b>blockquote tag</b> For 50 years, WWF has been protecting the future of nature. The world's leading
+        conservation
+        organization, WWF
+        works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+        globally.
+      </blockquote>
+      <div id="canvas">
+        <p>Canvas</p>
+        <canvas id="myCanvas">
+          canvas
+        </canvas>
+
+        <script>
+          var canvas = document.getElementById("myCanvas");
+          var ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#FFFF";
+          ctx.fillRect(0, 0, 300, 150);
+        </script>
+      </div>
+
+      <header><b>header</b> </header>
+      <nav><b>nav</b></nav>
+      <section><b>section</b></section>
+      <b>iframe</b>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+      </iframe>
+    </div>
+
+  </div>
+
+  </div>
+  <div class="div-100 flex row" id="inline">
+    <p>Inline Elements</p><br>
+    <span>I am a <b>Span</b></span>
+    <a href="https://github.com/mahesh-gfx">I am an<b>'a tag'</b></a>
+    <button>I am a button</button>
+    <time>time</time>
+    <cite>I am a <b>citation</b></cite>
+    <label for="label">I am a label</label>
   </div>
 </body>

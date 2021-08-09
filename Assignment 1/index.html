@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment 1</title>
     <link rel="stylesheet" type="text/css" href="app.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Dear Diary...</h1> 
+        <h1>Dear Diary...</h1>
         <form class='diary-entry'>
-            <textarea name="words" class="words" id="words" placeholder="Tell me about your day..." cols="80" rows="20"></textarea>
+            <textarea name="words" class="words" id="words" placeholder="Tell me about your day..." cols="80"
+                rows="20"></textarea>
             <div class="buttons">
-                <button type="submit" class="save" id="save">Save</button> 
+                <button type="submit" class="save" id="save">Save</button>
                 <input type="button" value="Reset" class="reset" onclick="javascript:eraseText();"></button>
-                <div class='last'>Last updated in this session<div id='lastup'></div> </div>
+                <div class='last'>Last updated in this session<div id='lastup'></div>
+                </div>
             </div>
         </form>
-        
+
         <div class="view">
             <div class="saved">
                 Your Entries
