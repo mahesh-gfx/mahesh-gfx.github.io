@@ -1,0 +1,62 @@
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+.between {
+  justify-content: space-between;
+}
+
+.logo {
+  fill: rgb(229, 9, 20);
+}
+
+body {
+  background-color: #222222;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+#header {
+  width: 100vw;
+}
+#landing {
+  background-color: rgb(255, 191, 194);
+  background: url("\assets\jpg\background.jpg");
+}
+
+.white {
+  color: white;
+}
+
+.height-auto {
+  height: auto;
+}
+
+#center {
+  height: 100%;
+}
