@@ -17,7 +17,8 @@
 .align-center {
   align-items: center;
 }
-.between {
+
+.space-between {
   justify-content: space-between;
 }
 
@@ -26,16 +27,28 @@
 }
 
 body {
-  background-color: #222222;
   margin: 0;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.vh-100 {
-  height: 100vh;
+.w-48 {
+  width: 48%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mw-85 {
+  max-width: 85%;
+}
+
+.vw-100 {
+  width: 100vw;
 }
 
 #landing {
+  height: 100vh;
   background-color: rgb(255, 191, 194);
   background: linear-gradient(
       to bottom,
@@ -49,7 +62,6 @@ body {
 }
 
 #header {
-  width: 100vw;
   padding-top: 0.5rem;
   margin: 0 3.5rem;
 }
@@ -70,10 +82,6 @@ body {
 }
 
 #unlimited {
-  font-size: 50px;
-  line-height: 55px;
-  font-weight: 700;
-  font-style: normal;
   max-width: 640px;
   text-align: center;
   padding: 0 200px;
@@ -81,20 +89,82 @@ body {
 
 #watch {
   margin-top: 16px;
-  font-size: 26px;
-  font-weight: 400;
 }
 #ready {
   font-size: 19px;
   font-weight: 400;
 }
 
-#get-started-card-wrap {
-  flex: 1 1 auto;
-}
 #get-started-card {
-  flex: 1 1 auto;
-  padding: 75px 0;
+  padding: 60px 0;
   max-width: 950px;
   margin: 0 auto;
+}
+
+.p-70-45 {
+  padding: 70px 45px;
+}
+
+.b-black {
+  background-color: #000000;
+}
+.story-card-wrap {
+  max-height: 350px;
+}
+
+.story-card-content {
+  margin: 0 75px;
+}
+
+.img {
+  height: auto;
+}
+
+.text-50-700-55 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.text-26-400-0 {
+  font-size: 26px;
+  font-weight: 400px;
+}
+
+.border-bt-8 {
+  border-bottom: 8px solid #222222;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.card-title {
+  margin: 0 0 8px;
+}
+
+.card-subtitle {
+  margin: 19.5px 0 6.5px;
+}
+
+.faq-list {
+  padding: 0;
+  margin: 52px 127.25px;
+}
+.faq-list-item button {
+  padding: 0.8em 1.2em 0.8em 1.2em;
+  text-align: left;
+  border-radius: 1px;
+  border: transparent;
+  background-color: #222222;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+.cross {
+  transform: rotate(45deg);
+  height: 1em;
 }
