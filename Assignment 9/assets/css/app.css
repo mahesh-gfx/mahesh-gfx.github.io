@@ -49,7 +49,6 @@ body {
 
 #landing {
   height: 100vh;
-  background-color: rgb(255, 191, 194);
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.9) 0%,
@@ -68,6 +67,21 @@ body {
 
 #header-wrap {
   padding-top: 20px;
+  flex: 0 1 auto;
+}
+
+#lang {
+  background-color: black;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.sign-in {
+  padding: 10px;
+  background-color: #e10813;
+  margin-left: 25px;
+  text-decoration: none;
+  border-radius: 3px;
 }
 .white {
   color: white;
@@ -81,24 +95,38 @@ body {
   height: 100%;
 }
 
-#unlimited {
+.unlimited {
   max-width: 640px;
   text-align: center;
   padding: 0 200px;
 }
 
-#watch {
-  margin-top: 16px;
+.watch {
+  margin: 16px 0;
 }
-#ready {
+.ready {
   font-size: 19px;
   font-weight: 400;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.bg-red {
+  background-color: #e10813;
+}
+
+#get-started-card-wrap {
+  top: 155px;
+  position: relative;
 }
 
 #get-started-card {
-  padding: 60px 0;
   max-width: 950px;
-  margin: 0 auto;
+  height: 100%;
+}
+
+.get-started-button {
+  padding: 15.5px 26px;
 }
 
 .p-70-45 {
@@ -167,4 +195,17 @@ li {
 .cross {
   transform: rotate(45deg);
   height: 1em;
+}
+
+.faq-list-item button:hover {
+  cursor: pointer;
+}
+
+.email {
+  min-width: 450px;
+  min-height: 60px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #8c8c8c;
 }

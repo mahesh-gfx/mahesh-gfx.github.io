@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="vh-100 border-bt-8" id="landing">
+  <div class="vh-100 border-bt-8 align-center just-center" id="landing">
     <div class="flex" id="header-wrap">
       <div class="flex row space-between vw-100" id="header">
         <div class="flex logo">
@@ -24,24 +24,26 @@
           </svg>
         </div>
         <div class="flex" id="header-buttons">
-          <select name="language">
+          <select name="language" class="white" id="lang">
             <option value="eng">English</option>
             <option value="eng">Hindi</option>
           </select>
-          <a href="" class="sign-in">Sign in</a>
+          <a href="" class="sign-in white">Sign in</a>
         </div>
       </div>
-    </div clas="align-center just-center" id="center">
-    <div class="flex" id="get-started-card-wrap">
+    </div>
+    <div class="flex align-center just-center" id="get-started-card-wrap">
       <div class="flex height-auto col align-center just-center" id="get-started-card">
         <div class="flex col align-center just-center">
-          <div class="white text-50-700-55" id="unlimited">Unlimited movies, TV shows and more.</div>
-          <div class="white text-26-400-0" id="watch">Watch anywhere. Cancel anytime.</div>
-          <div class="white" id="ready">Ready to watch? Enter your email to create or restart your membership.</div>
+          <div class="unlimited white text-50-700-55">Unlimited movies, TV shows and more.</div>
+          <div class="watch white text-26-400-0">Watch anywhere. Cancel anytime.</div>
+          <div class="ready white">Ready to watch? Enter your email to create or restart your membership.
+          </div>
         </div>
-        <div class="flex align-center" id="email-form">
-          <input type="email" name="email" id="email">
-          <button>Get Started</button>
+        <div class="email-form flex align-center">
+          <input type="email" name="email" class="email" placeholder="Email Address">
+          <button class="get-started-button text-26-400-0 white bg-red">Get Started <span><img
+                src="assets\svg\arrow.svg" alt=""></span></button>
         </div>
       </div>
     </div>
@@ -137,8 +139,20 @@
           <li class="faq-list-item "><button class="flex w-100 text-26-400-0 white align-center space-between">Is
               Netflix good for kids?
               <img class="cross" src="assets\svg\cross.svg" alt=""> </button></li>
-
         </ul>
+
+        <div class="email-form flex align-center just-center col">
+          <div class="col just-center">
+            <div class="ready white">Ready to watch? Enter your email to create or restart your membership.
+            </div>
+            <div class="email-form flex align-center">
+              <input type="email" name="email" class="email" placeholder="Email Address">
+              <button class="get-started-button text-26-400-0 white bg-red">Get Started <span><img
+                    src="assets\svg\arrow.svg" alt=""></span></button>
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>
