@@ -27,28 +27,36 @@
 
 body {
   background-color: #222222;
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .vh-100 {
   height: 100vh;
 }
 
-.p-15 {
-  padding: 15px;
-}
-
-.p-5 {
-  padding: 5px;
+#landing {
+  background-color: rgb(255, 191, 194);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 70%),
+    url("../jpg/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #header {
   width: 100vw;
-}
-#landing {
-  background-color: rgb(255, 191, 194);
-  background: url("\assets\jpg\background.jpg");
+  padding-top: 0.5rem;
+  margin: 0 3.5rem;
 }
 
+#header-wrap {
+  padding-top: 20px;
+}
 .white {
   color: white;
 }
@@ -59,4 +67,34 @@ body {
 
 #center {
   height: 100%;
+}
+
+#unlimited {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 700;
+  font-style: normal;
+  max-width: 640px;
+  text-align: center;
+  padding: 0 200px;
+}
+
+#watch {
+  margin-top: 16px;
+  font-size: 26px;
+  font-weight: 400;
+}
+#ready {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+#get-started-card-wrap {
+  flex: 1 1 auto;
+}
+#get-started-card {
+  flex: 1 1 auto;
+  padding: 75px 0;
+  max-width: 950px;
+  margin: 0 auto;
 }
