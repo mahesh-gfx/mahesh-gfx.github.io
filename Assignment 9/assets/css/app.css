@@ -1,7 +1,6 @@
 .flex {
   display: flex;
 }
-
 .row {
   flex-direction: row;
 }
@@ -117,7 +116,7 @@ body {
 }
 
 #get-started-card-wrap {
-  top: 155px;
+  top: 25%;
   position: relative;
 }
 
