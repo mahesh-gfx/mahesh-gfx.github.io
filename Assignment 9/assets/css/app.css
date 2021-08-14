@@ -29,6 +29,7 @@
 body {
   margin: 0;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: black;
 }
 
 .w-48 {
@@ -144,6 +145,12 @@ body {
   margin: 0 75px;
 }
 
+#tv-video {
+  z-index: -1;
+  position: relative;
+  left: 50%;
+  top: 46%;
+}
 .img {
   height: auto;
 }
@@ -208,4 +215,31 @@ li {
   font-size: 16px;
   font-weight: 400px;
   color: #8c8c8c;
+}
+
+.footer-wrap {
+  color: #757575;
+  margin: 0 129.5px;
+  padding: 70px 45px 20px;
+}
+
+.footer-top {
+  margin: 0 0 30px;
+}
+
+.footer-content {
+  width: 100%;
+}
+
+.footer-col span {
+  margin: 0 0 16px;
+}
+
+#lang-footer {
+  padding: 12px 26px 12px 50px;
+  margin: 20px 0 0;
+}
+
+#footer-country {
+  margin: 24px 0 13px;
 }
