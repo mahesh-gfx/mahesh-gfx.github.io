@@ -1,6 +1,7 @@
 .flex {
   display: flex;
 }
+
 .row {
   flex-direction: row;
 }
@@ -144,12 +145,26 @@ body {
   margin: 0 75px;
 }
 
-#tv-video {
-  z-index: -1;
-  position: relative;
-  left: 50%;
-  top: 46%;
+#tv #devices {
+  position: absolute;
+  z-index: 1;
 }
+.tv-video {
+  z-index: -1;
+  position: absolute;
+  width: 25.5%;
+  left: 56%;
+  bottom: -40%;
+}
+
+.tv-video1 {
+  z-index: 0;
+  position: relative;
+  width: 50%;
+  left: 24%;
+  bottom: 20%;
+}
+
 .img {
   height: auto;
 }
@@ -191,11 +206,26 @@ body {
   border-radius: 1px;
   border: transparent;
   background-color: #222222;
+  content: \002b;
 }
 
+.accordion::after {
+  content: "\002b";
+}
+
+button.active::after {
+  content: "\002d";
+}
 li {
   list-style-type: none;
   margin-bottom: 8px;
+}
+
+.faq-ans {
+  padding: 31px;
+  background-color: #222222;
+  margin: 2px 0 5px 0;
+  display: none;
 }
 
 .cross {
