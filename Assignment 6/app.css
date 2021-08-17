@@ -1,0 +1,15 @@
+#sand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin-top: 20px;
+  font-size: larger;
+}
+
+iframe {
+  margin-bottom: 20px;
+  padding: 0px;
+}
